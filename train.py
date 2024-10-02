@@ -6,4 +6,5 @@ from douzero.dmc.dmc import train
 if __name__ == '__main__':
     flags = parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"] = flags.gpu_devices
+    flags.load_model = True
     train(flags)
