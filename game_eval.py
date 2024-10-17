@@ -264,8 +264,7 @@ class GameEnv(object):
             # then game is over.
             self.compute_player_utility()
             self.update_num_wins_scores()
-            print(self.winner)
-            print(self.bid_winner)
+            print("winner:", self.winner, ", bid_winner", self.bid_winner)
             self.game_over = True
 
     def judge_spring(self):
